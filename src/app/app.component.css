@@ -1,4 +1,19 @@
 html, body{
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
+}
+#hello{
+    margin-top: 50px;
+}
+.txt-danger{
+    color: red;
+
+}
+.txt-success{
+    color: green;
+    font-size: 40px;
+}
+.txt-special{
+    /* color: blue; */
+    font-size: 60px;
 }

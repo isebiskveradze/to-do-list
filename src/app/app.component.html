@@ -1,72 +1,28 @@
 <app-header></app-header>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
-<h1 style="text-align: center;">HELLO WORLD</h1>
+
+
+
+<h1 style="text-align: center;" id="hello">HELLO WORLD</h1>
+
+<p [ngClass]="{
+    'txt-danger': this.hasError,
+    'txt-success': !this.hasError,
+    'txt-special': this.isSpecial
+  }">DANGER!!!</p>
+<button  (click)="togleHasError()">Change</button>
+<p>{{message}}</p>
+<p>{{message2}}</p>
+<input type="text" [disabled]="disabledProp">
+<br>
+<img [src]="srcProp" alt="" id="srcImg">
+<br>
+<span>counter is {{counter}}</span>
+<br>
+<button (click)="increaseCounter()">Increase Counter</button>
+<br>
+<input type="text" (change)="handleInputChange($event)">
+<div>
+    <img [src]="imgLink" alt="">
+    
+</div>
 <app-footer></app-footer>
