@@ -1,0 +1,16 @@
+<p>user-form-test works!</p>
+<form (ngSubmit)="submitUserForm(userForm)"  #userForm="ngForm">
+    <div>
+        <input type="text" placeholder="username"  minlength="6" name="username" #username="ngModel" ngModel required style="margin: 8px;">
+    </div>
+    <!-- <span *ngIf="userForm && userForm.controls.username && userForm.controls.username.touched && userForm.controls.username.errors && userForm.controls.username.errors.minlength"> you have to enter {​​​​​{​​​​​userForm.controls.username.errors.minlength.requiredLength}​​​​​}​​​​​ characters, you've only entered {​​​​​{​​​​​userForm.controls.username.errors.minlength.actualLength}​​​​​}​​​​​</span> -->
+    <span *ngIf="username && username.errors && username.errors.minlength">you have enter {{username.errors.minlength.requiredLength}} you've only entered {{username.errors.minlength.actualLength}}</span>
+    <div>
+        <input type="password" placeholder=" password" minlength="6" name="password"  ngModel required style="margin: 8px;">
+    </div>
+    <button type="submit" style="margin: 8px;" >Log In</button>
+    
+</form>
+<!-- <div>
+    <p>{{pTagi}}</p>
+</div> -->

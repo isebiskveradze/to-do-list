@@ -1,19 +1,8 @@
-html, body{
-    margin-top: 0px;
-    padding: 0px;
+.container {
+    margin: 0 auto;
+    width: 90%;
 }
-#hello{
+ 
+.to-do-list {
     margin-top: 50px;
-}
-.txt-danger{
-    color: red;
-
-}
-.txt-success{
-    color: green;
-    font-size: 40px;
-}
-.txt-special{
-    /* color: blue; */
-    font-size: 60px;
 }
